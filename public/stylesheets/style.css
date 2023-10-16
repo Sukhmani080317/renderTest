@@ -1,0 +1,330 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+/* Overall Styling for Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #2E3A59;
+  /* deep blue color */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-brand {
+  color: #EDEDED;
+  /* off-white color */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Navigation List Styling */
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-list li {
+  position: relative;
+}
+
+.nav-list li a {
+  color: #EDEDED;
+  /* off-white color */
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-list li a:hover {
+  color: #2E3A59;
+  /* deep blue color */
+  background-color: #EDEDED;
+  /* off-white color */
+  border-radius: 5px;
+}
+
+/* For active page highlight */
+.nav-list li.active a,
+.nav-list li a.active {
+  color: #2E3A59;
+  /* deep blue color */
+  background-color: #EDEDED;
+  /* off-white color */
+  border-radius: 5px;
+}
+
+
+/* Styles for Project Page */
+.page-title {
+  text-align: center;
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  /* Make child elements stack vertically */
+  align-items: center;
+  /* Center the cards horizontally */
+  margin: 0 auto;
+  padding: 0 20px;
+  /* Adding padding to ensure some spacing on smaller screens */
+}
+
+.project-card {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 80%;
+  /* occupy 80% of container's width */
+  max-width: 600px;
+  /* set maximum width for larger screens */
+  padding: 25px 20px;
+  background-color: #F7F8FC;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 40px;
+  /* Space between each card */
+}
+
+.project-title {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.project-description {
+  margin-bottom: 20px;
+}
+
+.project-link {
+  background-color: #007BFF;
+  color: #ffffff;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.project-link:hover {
+  background-color: #0056b3;
+}
+
+
+/* About Section Styles */
+.about-section {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.profile-photo {
+  border-radius: 50%;
+  width: 200px;
+}
+
+/* Skills & Expertise Styles */
+.skills-section {
+  background-color: #F5F5F5;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.skills-list li {
+  margin: 0 15px;
+}
+
+
+blockquote {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.recent-works-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.project {
+  padding: 10px;
+  margin: 15px 0;
+  border: 1px solid #DDD;
+}
+
+.cta-section {
+  padding: 50px 0;
+  background-color: #2E3A59;
+  color: #EDEDED;
+  text-align: center;
+}
+
+.cta-button {
+  background-color: #EDEDED;
+  color: #2E3A59;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #C5C5C5;
+}
+
+
+/* About Section Styles */
+.about-section {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.profile-photo {
+  border-radius: 50%;
+  width: 200px;
+}
+
+/* Skills & Expertise Styles */
+.skills-section {
+  background-color: #F5F5F5;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.skills-list li {
+  margin: 0 15px;
+}
+
+/* Testimonials Styles */
+.testimonials-section {
+  padding: 50px 0;
+  background-color: #EDEDED;
+  text-align: center;
+}
+
+blockquote {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+/* Recent Works Styles */
+.recent-works-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.project {
+  padding: 10px;
+  margin: 15px 0;
+  border: 1px solid #DDD;
+}
+
+.cta-section {
+  padding: 50px 0;
+  background-color: #2E3A59;
+  color: #EDEDED;
+  text-align: center;
+}
+
+.cta-button {
+  background-color: #EDEDED;
+  color: #2E3A59;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #C5C5C5;
+}
+
+
+/* Contact Information Styles */
+.contact-info {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact-info address p {
+  margin: 15px 0;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #2E3A59;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #555555;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact-form form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 15px 25px;
+  background-color: #2E3A59;
+  color: #EDEDED;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #1E2A49;
+}
+
+/* Map Styles */
+.contact-map {
+  margin-top: 50px;
+}
